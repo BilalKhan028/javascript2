@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    
+</head>
+<body>
+    <h1>Student Marksheet</h1>
+    <script>
+        
+        let name = prompt("Enter student name:");
+        let mathMarks = parseFloat(prompt("Enter Math marks:"));
+        let scienceMarks = parseFloat(prompt("Enter Science marks:"));
+        let englishMarks = parseFloat(prompt("Enter English marks:"));
+
+        let totalMarks = mathMarks + scienceMarks + englishMarks;
+        let averageMarks = totalMarks / 3;
+
+        document.write("<h2>Student Details</h2>");
+        document.write("<p>Name: " + name + "</p>");
+        document.write("<h2>Marks Details</h2>");
+        document.write("<p>Math Marks: " + mathMarks + "</p>");
+        document.write("<p>Science Marks: " + scienceMarks + "</p>");
+        document.write("<p>English Marks: " + englishMarks + "</p>");
+        document.write("<h2>Result</h2>");
+
+        if (averageMarks >= 60) {
+            document.write("<p>Pass</p>");
+        } else {
+            document.write("<p>Fail</p>");
+        }
+    </script>
+</body>
+</html>
